@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadisha Maharjan | Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+
+        body{
+            background:#0f172a;
+            color:white;
+            line-height:1.6;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 10%;
+            position:sticky;
+            top:0;
+            background:rgba(15,23,42,0.9);
+            backdrop-filter:blur(10px);
+            z-index:100;
+        }
+
+        nav h2{
+            color:#38bdf8;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:25px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#38bdf8;
+        }
+
+        .hero{
+            min-height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            padding:0 10%;
+            background:linear-gradient(
+                135deg,
+                #0f172a,
+                #1e293b,
+                #0f172a
+            );
+        }
+
+        .hero-content h1{
+            font-size:4rem;
+            margin-bottom:10px;
+        }
+
+        .hero-content h1 span{
+            color:#38bdf8;
+        }
+
+        .hero-content h3{
+            color:#cbd5e1;
+            font-weight:400;
+            margin-bottom:20px;
+        }
+
+        .hero-content p{
+            max-width:700px;
+            margin:auto;
+            color:#94a3b8;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:25px;
+            padding:12px 28px;
+            background:#38bdf8;
+            color:#0f172a;
+            text-decoration:none;
+            border-radius:30px;
+            font-weight:600;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            transform:translateY(-3px);
+        }
+
+        section{
+            padding:80px 10%;
+        }
+
+        .section-title{
+            text-align:center;
+            font-size:2.2rem;
+            margin-bottom:40px;
+            color:#38bdf8;
+        }
+
+        .about{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:40px;
+            align-items:center;
+        }
+
+        .card{
+            background:#1e293b;
+            padding:25px;
+            border-radius:15px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .skills{
+            display:flex;
+            flex-wrap:wrap;
+            gap:15px;
+            justify-content:center;
+        }
+
+        .skill{
+            background:#1e293b;
+            padding:12px 20px;
+            border-radius:25px;
+            transition:0.3s;
+        }
+
+        .skill:hover{
+            background:#38bdf8;
+            color:#0f172a;
+        }
+
+        .interests{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+        }
+
+        .interest-card{
+            background:#1e293b;
+            padding:25px;
+            border-radius:15px;
+            text-align:center;
+        }
+
+        footer{
+            text-align:center;
+            padding:25px;
+            background:#020617;
+            color:#94a3b8;
+        }
+
+        @media(max-width:768px){
+
+            .hero-content h1{
+                font-size:2.8rem;
+            }
+
+            .about{
+                grid-template-columns:1fr;
+            }
+
+            nav{
+                flex-direction:column;
+                gap:10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h2>Nadisha.</h2>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Nadisha Maharjan</span></h1>
+
+            <h3>Computer Science Student | Creative Thinker</h3>
+
+            <p>
+                I am a second-semester Computer Science student who enjoys
+                learning new technologies and expressing creativity through
+                different hobbies. I am passionate about problem-solving,
+                continuous learning, and building meaningful digital experiences.
+            </p>
+
+            <a href="#about" class="btn">Explore More</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about">
+            <div class="card">
+                <h3>Who Am I?</h3>
+                <br>
+                <p>
+                    My name is Nadisha Maharjan. I am currently studying
+                    Computer Science in my second semester. I enjoy exploring
+                    technology, designing creative projects, and expanding my
+                    knowledge through practical learning.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>My Goal</h3>
+                <br>
+                <p>
+                    My goal is to grow as a software developer while combining
+                    technical skills with creativity to build innovative and
+                    user-friendly solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Skills & Learning</h2>
+
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Python</div>
+            <div class="skill">C Programming</div>
+            <div class="skill">Problem Solving</div>
+            <div class="skill">Creative Thinking</div>
+        </div>
+    </section>
+
+    <section id="interests">
+        <h2 class="section-title">My Interests</h2>
+
+        <div class="interests">
+            <div class="interest-card">
+                <h3>📚 Reading Novels</h3>
+                <p>Exploring stories and discovering new perspectives.</p>
+            </div>
+
+            <div class="interest-card">
+                <h3>🧶 Crochet</h3>
+                <p>Creating handmade designs and artistic projects.</p>
+            </div>
+
+            <div class="interest-card">
+                <h3>🎨 Creativity</h3>
+                <p>Enjoying creative activities and innovative ideas.</p>
+            </div>
+
+            <div class="interest-card">
+                <h3>💻 Technology</h3>
+                <p>Learning programming and exploring modern technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="card" style="text-align:center;">
+            <p>
+                Thank you for visiting my portfolio.
+                Feel free to connect with me and follow my journey as a
+                Computer Science student.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Nadisha Maharjan | Portfolio Website</p>
+    </footer>
+
+</body>
+</html>
